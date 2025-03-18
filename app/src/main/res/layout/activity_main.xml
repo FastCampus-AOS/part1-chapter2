@@ -12,10 +12,11 @@
         android:layout_height="wrap_content"
         android:hint="자연수를 입력해주세요"
         android:textSize="30sp"
-        android:textColor="@color/purple"
+        android:textColorHint="@color/purple"
         android:textStyle="italic"
         android:gravity="center"
         android:inputType="numberDecimal"
+        android:maxLength="7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -58,6 +59,7 @@
         app:layout_constraintBaseline_toBaselineOf="@id/outputTextView"/>
 
     <ImageButton
+        android:id="@+id/swapImageButton"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_swap_vert_24"
